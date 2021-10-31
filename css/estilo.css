@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.dino {
+    position: absolute;
+    bottom: 0;
+    height: 64px;
+    width: 64px;
+    background-image: url(../img/dino.png);
+    background-repeat: no-repeat;
+    margin-left: 15px;
+}
+
+.cactos {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    background-image: url(../img/cactus.png);
+}
+
+.gameOver {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@keyframes slideright {
+    from {
+        background-position: 70000%;
+    }
+    to {
+        background-position: 0%;
+    }
+}
+
+.background {
+    position: absolute;
+    bottom: 0px;
+    background-image: url('../img/background.png');
+    background-repeat: repeat-x;
+    animation: slideright 600s infinite linear;
+    -webkit-animation: slideright 600s infinite linear;
+    width: 100%;
+    height: 200px;
+}
